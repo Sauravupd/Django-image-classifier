@@ -1,0 +1,9 @@
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="imageFile" />
+    <input type="submit" name="submit" value="upload" />
+</form>
+{% for item in predictions%}
+   {{item.0.1}}
+{%endfor%}
+  
